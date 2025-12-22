@@ -11,6 +11,9 @@ const controller = require("./controllers/cryptoData.controller");
 
 const app = express();
 
+console.log("SUPABASE_URL:", process.env.SUPABASE_URL);
+console.log("SUPABASE_ANON_KEY:", process.env.SUPABASE_PASS);
+
 app.use(cors());
 app.use(express.json());
 
